@@ -37,6 +37,7 @@ main {
 
 .header {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 3rem;
 }
 
@@ -54,3 +55,80 @@ main {
 .header p {
   text-wrap: balance;
 }
+
+.card {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px -16px var(--c-grey-400);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.card p {
+  color: var(--c-grey-400);
+  font-size: 0.8rem;
+  max-width: 30ch;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+.card-1 {
+  border-top: 5px solid var(--c-cyan);
+}
+
+.card-2 {
+  border-top: 5px solid var(--c-red);
+}
+
+.card-3 {
+  border-top: 5px solid var(--c-orange);
+}
+
+.card-4 {
+  border-top: 5px solid var(--c-blue);
+  margin-bottom: 0;
+}
+
+@media (min-width: 51rem) {
+  main {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding-block: 5rem;
+  }
+
+  .header {
+    max-width: 34rem;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .header p {
+    max-width: 100%;
+    text-wrap: wrap;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .card-container section {
+    flex-grow: 1;
+  }
+
+  .card p {
+    max-width: 40ch;
+  }
+}  
