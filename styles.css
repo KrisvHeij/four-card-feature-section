@@ -106,6 +106,7 @@ main {
 
   .header {
     max-width: 34rem;
+    margin-bottom: 4rem;
   }
 
   .header h1 {
